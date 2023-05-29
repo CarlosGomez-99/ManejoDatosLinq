@@ -1,4 +1,8 @@
-﻿LinqQueries queries = new LinqQueries();
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+LinqQueries queries = new LinqQueries();
 
 //Toda la colección
 // ImprimirValores(queries.TodaLaColeccion());

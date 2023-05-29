@@ -1,3 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+
 public class LinqQueries
 {
     private List<Book> librosCollection = new List<Book>();
@@ -62,7 +67,7 @@ public class LinqQueries
 
     public IEnumerable<Book> TresLibrosJavaPublicadosMasRecientes()
     {
-        return librosCollection.Where(p => p.Categories.Contains("Java")).OrderByDescending(p => p.PublishedDate).Take(3).take;
+        return librosCollection.Where(p => p.Categories.Contains("Java")).OrderByDescending(p => p.PublishedDate).Take(3);
     }
 
     public IEnumerable<Book> TercerCuartoLibroMayor400Paginas()
